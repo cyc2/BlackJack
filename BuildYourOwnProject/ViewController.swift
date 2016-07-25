@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     var pCard6 = 0
     
     var timesHit = 0
+    var ace = false
     
     var dealerInitial = 0
     var dealerSecond = 0
@@ -130,6 +131,7 @@ class ViewController: UIViewController {
         if playerChips < 1 {
             playerChips = 100
         }
+        aceChecker()
         TotalChipsLabel.text = String(playerChips)
         PlayerTotalLabel.text = String(playerInitial)
         DealerTotalLabel.text = ("?")
@@ -172,14 +174,19 @@ class ViewController: UIViewController {
         
         switch timesHit {
         case 0 :
+            playerCurrentTotal = pCard1 + pCard2 + pCard3
             
             PlayerLabel.text = ("\(pCard1) \(pCard2) \(pCard3)")
             
-            PlayerTotalLabel.text = String(playerSecond)
-            
-            playerCurrentTotal = playerSecond
+            if ace == true {
+            PlayerTotalLabel.text = String(playerCurrentTotal)
+            } else {
+                PlayerTotalLabel.text = String(playerSecond)
+            }
             
             timesHit += 1
+            
+            aceChecker()
             
             if playerCurrentTotal > 21 && (pCard1 == 11 || pCard2 == 11 || pCard3 == 11){
                 if pCard1 == 11 {
@@ -191,27 +198,31 @@ class ViewController: UIViewController {
                 if pCard3 == 11 {
                     pCard3 = 1
                 }
-                playerCurrentTotal = pCard1 + pCard2 + pCard3
                 PlayerTotalLabel.text = String(playerCurrentTotal)
                 PlayerLabel.text = ("\(pCard1) \(pCard2) \(pCard3)")
-            }
-            
-            if playerCurrentTotal > 21 {
+                ace = true
+            } else if playerCurrentTotal > 21 {
                 PlayerTotalLabel.text = ("You bust \(playerCurrentTotal)")
                 hitButton.enabled = false
                 playerBusted()
             }
         case 1 :
+            playerCurrentTotal = pCard1 + pCard2 + pCard3 + pCard4
             
             PlayerLabel.text = ("\(pCard1) \(pCard2) \(pCard3) \(pCard4)")
             
-            PlayerTotalLabel.text = String(playerThird)
+            if ace == true {
+                PlayerTotalLabel.text = String(playerCurrentTotal)
+            } else {
+                PlayerTotalLabel.text = String(playerThird)
+            }
             
-            playerCurrentTotal = playerThird
             
             timesHit += 1
             
-            if playerCurrentTotal > 21 && (pCard1 == 11 || pCard2 == 11 || pCard3 == 11){
+            aceChecker()
+            
+            if playerCurrentTotal > 21 && (pCard1 == 11 || pCard2 == 11 || pCard3 == 11 ){
                 if pCard1 == 11 {
                     pCard1 = 1
                 }
@@ -221,26 +232,28 @@ class ViewController: UIViewController {
                 if pCard3 == 11 {
                     pCard3 = 1
                 }
-                playerCurrentTotal = pCard1 + pCard2 + pCard3 + pCard4
                 PlayerTotalLabel.text = String(playerCurrentTotal)
                 PlayerLabel.text = ("\(pCard1) \(pCard2) \(pCard3) \(pCard4)")
-            }
-            
-            if playerCurrentTotal > 21 {
+            } else if playerCurrentTotal > 21 {
                 PlayerTotalLabel.text = ("You bust \(playerCurrentTotal)")
                 hitButton.enabled = false
                 playerBusted()
             }
             
         case 2 :
+            playerCurrentTotal = pCard1 + pCard2 + pCard3 + pCard4 + pCard5
             
             PlayerLabel.text = ("\(pCard1) \(pCard2) \(pCard3) \(pCard4) \(pCard5)")
             
-            PlayerTotalLabel.text = String(playerFourth)
-            
-            playerCurrentTotal = playerFourth
+            if ace == true {
+                PlayerTotalLabel.text = String(playerCurrentTotal)
+            } else {
+                PlayerTotalLabel.text = String(playerFourth)
+            }
             
             timesHit += 1
+            
+            aceChecker()
             
             if playerCurrentTotal > 21 && (pCard1 == 11 || pCard2 == 11 || pCard3 == 11){
                 if pCard1 == 11 {
@@ -252,26 +265,28 @@ class ViewController: UIViewController {
                 if pCard3 == 11 {
                     pCard3 = 1
                 }
-                playerCurrentTotal = pCard1 + pCard2 + pCard3 + pCard4 + pCard5
                 PlayerTotalLabel.text = String(playerCurrentTotal)
                 PlayerLabel.text = ("\(pCard1) \(pCard2) \(pCard3) \(pCard4) \(pCard5)")
-            }
-            
-            if playerCurrentTotal > 21 {
+            } else if playerCurrentTotal > 21 {
                 PlayerTotalLabel.text = ("You bust \(playerCurrentTotal)")
                 hitButton.enabled = false
                 playerBusted()
             }
             
         case 3 :
+            playerCurrentTotal = pCard1 + pCard2 + pCard3 + pCard4 + pCard5 + pCard6
             
             PlayerLabel.text = ("\(pCard1) \(pCard2) \(pCard3) \(pCard4) \(pCard5) \(pCard6)")
             
-            PlayerTotalLabel.text = String(playerFifth)
-            
-            playerCurrentTotal = playerFifth
+            if ace == true {
+                PlayerTotalLabel.text = String(playerCurrentTotal)
+            } else {
+                PlayerTotalLabel.text = String(playerFifth)
+            }
             
             timesHit += 1
+            
+            aceChecker()
             
             if playerCurrentTotal > 21 && (pCard1 == 11 || pCard2 == 11 || pCard3 == 11){
                 if pCard1 == 11 {
@@ -283,17 +298,14 @@ class ViewController: UIViewController {
                 if pCard3 == 11 {
                     pCard3 = 1
                 }
-                playerCurrentTotal = pCard1 + pCard2 + pCard3 + pCard4 + pCard5 + pCard6
                 PlayerTotalLabel.text = String(playerCurrentTotal)
                 PlayerLabel.text = ("\(pCard1) \(pCard2) \(pCard3) \(pCard4) \(pCard5) \(pCard6)")
-            }
-            
-            if playerCurrentTotal > 21 {
+            } else if playerCurrentTotal > 21 {
                 PlayerTotalLabel.text = ("You bust \(playerCurrentTotal)")
                 hitButton.enabled = false
                 playerBusted()
             }
-
+            
         default :
             print("no way")
         }
@@ -381,7 +393,7 @@ class ViewController: UIViewController {
             playerWin = true
         }
         if playerInitial == 21 && dealerInitial != 21 {
-            PlayerTotalLabel.text = ("Blackjack \(playerBet)")
+            PlayerTotalLabel.text = ("Blackjack pays 3/2 \(playerBet * 3/2)")
             playerWin = true
         }
         if playerInitial != 21 && dealerInitial == 21 {
@@ -410,6 +422,7 @@ class ViewController: UIViewController {
             playerChips = playerChips - playerBet
         }
         
+        ace = false
         playerWin = false
         wasPush = false
         TotalChipsLabel.text = String(playerChips)
@@ -418,6 +431,14 @@ class ViewController: UIViewController {
         hitButton.enabled = true
         standButton.enabled = true
         dealButton.enabled = true
+    }
+    
+    func aceChecker() {
+        if Int(PlayerTotalLabel.text!) > 21 {
+            if pCard1 == 11 || pCard2 == 11 {
+                playerCurrentTotal = playerCurrentTotal - 10
+            }
+        }
     }
 }
 
