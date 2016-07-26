@@ -100,6 +100,11 @@ class ViewController: UIViewController {
             hitButton.enabled = false
             standButton.enabled = false
         
+        if name == "" {
+            playerChips = 10000
+            TotalChipsLabel.text = "10000"
+        }
+        
     }
     
     @IBAction func onTappedReduceBetButton(sender: AnyObject) {

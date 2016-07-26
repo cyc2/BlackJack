@@ -75,8 +75,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cF7-lT-wDp">
+                                <rect key="frame" x="121" y="370" width="127" height="35"/>
+                                <color key="backgroundColor" red="0.97351762819999998" green="0.8130032506" blue="0.081404475269999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X6a-Mq-bHS">
+                                <rect key="frame" x="122" y="219" width="127" height="35"/>
+                                <color key="backgroundColor" red="0.97351762819999998" green="0.8130032506" blue="0.081404475269999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te5-eL-0pw">
+                                <rect key="frame" x="187" y="246" width="92" height="133"/>
+                                <color key="backgroundColor" red="0.97351762819999998" green="0.8130032506" blue="0.081404475269999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awc-Wu-hB9">
+                                <rect key="frame" x="89" y="246" width="98" height="133"/>
+                                <color key="backgroundColor" red="0.97351762819999998" green="0.8130032506" blue="0.081404475269999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dealer" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jS-9b-TZ7">
-                                <rect key="frame" x="0.0" y="0.0" width="180" height="40"/>
+                                <rect key="frame" x="195" y="61" width="180" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.13212053531565771" blue="0.13773592405614032" alpha="0.74634308510638303" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -105,7 +133,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdT-2Q-RC2">
-                                <rect key="frame" x="295" y="459" width="80" height="80"/>
+                                <rect key="frame" x="300" y="485" width="75" height="75"/>
                                 <color key="backgroundColor" red="0.23242637499999999" green="0.23209651510000001" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,74 +151,71 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N1-g6-hf3">
-                                <rect key="frame" x="295" y="0.0" width="80" height="80"/>
+                                <rect key="frame" x="0.0" y="52" width="80" height="80"/>
                                 <color key="backgroundColor" red="1" green="0.13212053530000001" blue="0.13773592409999999" alpha="0.74634308510000003" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Haj-Eu-Pyc">
-                                <rect key="frame" x="252" y="552" width="90" height="25"/>
+                                <rect key="frame" x="253" y="564" width="90" height="25"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.20132424645390071" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackjack" translatesAutoresizingMaskIntoConstraints="NO" id="SQ8-BS-Zgc">
-                                <rect key="frame" x="122" y="236" width="132" height="102"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z6N-09-Thr">
-                                <rect key="frame" x="74" y="382" width="80" height="109"/>
+                                <rect key="frame" x="86" y="413" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gth-6B-XW3">
-                                <rect key="frame" x="97" y="382" width="80" height="109"/>
+                                <rect key="frame" x="109" y="413" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UWF-0y-H4L">
-                                <rect key="frame" x="122" y="382" width="80" height="109"/>
+                                <rect key="frame" x="134" y="413" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54V-2W-bVq">
-                                <rect key="frame" x="147" y="382" width="80" height="109"/>
+                                <rect key="frame" x="159" y="413" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bVW-z4-7Ed">
-                                <rect key="frame" x="172" y="382" width="80" height="109"/>
+                                <rect key="frame" x="184" y="413" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brT-4z-O2a">
-                                <rect key="frame" x="197" y="382" width="80" height="109"/>
+                                <rect key="frame" x="209" y="413" width="75" height="102"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo2-4o-27M">
-                                <rect key="frame" x="0.0" y="499" width="180" height="40"/>
+                                <rect key="frame" x="0.0" y="523" width="150" height="35"/>
                                 <color key="backgroundColor" red="0.23242637499538032" green="0.23209651506048812" blue="1" alpha="0.75" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="769-zV-GB5">
-                                <rect key="frame" x="74" y="70" width="80" height="109"/>
+                                <rect key="frame" x="89" y="109" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bkl-Do-f5u">
-                                <rect key="frame" x="97" y="70" width="80" height="109"/>
+                                <rect key="frame" x="112" y="109" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfB-Ij-No2">
-                                <rect key="frame" x="122" y="70" width="80" height="109"/>
+                                <rect key="frame" x="137" y="109" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlt-te-2vm">
-                                <rect key="frame" x="147" y="70" width="80" height="109"/>
+                                <rect key="frame" x="162" y="109" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="igY-70-XU1">
-                                <rect key="frame" x="172" y="70" width="80" height="109"/>
+                                <rect key="frame" x="187" y="109" width="75" height="102"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iDE-FO-EWN">
-                                <rect key="frame" x="197" y="70" width="80" height="109"/>
+                                <rect key="frame" x="212" y="109" width="75" height="102"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMB-jE-abb">
-                                <rect key="frame" x="30" y="560" width="90" height="45"/>
+                                <rect key="frame" x="30" y="566" width="90" height="45"/>
                                 <color key="backgroundColor" red="0.99593436209999997" green="1" blue="0.98775637849999998" alpha="0.25" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tR-z9-c3A">
-                                <rect key="frame" x="252" y="577" width="45" height="25"/>
+                                <rect key="frame" x="253" y="589" width="45" height="25"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Cochin-BoldItalic" family="Cochin" pointSize="24"/>
                                 <state key="normal" title="\/">
@@ -201,7 +226,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MIz-TU-ad7">
-                                <rect key="frame" x="297" y="577" width="45" height="25"/>
+                                <rect key="frame" x="298" y="589" width="45" height="25"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Cochin-BoldItalic" family="Cochin" pointSize="24"/>
                                 <state key="normal" title="/\">
@@ -212,28 +237,38 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pokerchip" translatesAutoresizingMaskIntoConstraints="NO" id="lGn-1L-eBc">
-                                <rect key="frame" x="163" y="560" width="45" height="45"/>
+                                <rect key="frame" x="163" y="566" width="45" height="45"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BLACK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zuh-AI-XR7">
-                                <rect key="frame" x="85" y="193" width="200" height="35"/>
+                                <rect key="frame" x="87" y="219" width="200" height="35"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♠ ♠ ♠ ♠" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXy-8o-qMk">
+                                <rect key="frame" x="103" y="243" width="20" height="139"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="28"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JACK" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9N3-WD-7hJ">
-                                <rect key="frame" x="85" y="344" width="200" height="35"/>
+                                <rect key="frame" x="87" y="370" width="200" height="35"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="30"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♠♠♠♠" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCV-Sz-dk8">
-                                <rect key="frame" x="246" y="220" width="20" height="133"/>
+                                <rect key="frame" x="248" y="246" width="20" height="133"/>
                                 <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="28"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="♠ ♠ ♠ ♠" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXy-8o-qMk">
-                                <rect key="frame" x="101" y="217" width="20" height="139"/>
-                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Dealer must stand on 17 | Blackjack pays 3/2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4J4-ev-pc4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                <color key="backgroundColor" red="0.3234538851" green="0.21582157330000001" blue="0.11163833500000001" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blackjack" translatesAutoresizingMaskIntoConstraints="NO" id="SQ8-BS-Zgc">
+                                <rect key="frame" x="121" y="262" width="132" height="102"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.00099978225676135312" green="0.43185536649214662" blue="0.0041179972441904777" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -266,7 +301,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="382.5" y="294.5"/>
+            <point key="canvasLocation" x="335.5" y="294.5"/>
         </scene>
     </scenes>
     <resources>
