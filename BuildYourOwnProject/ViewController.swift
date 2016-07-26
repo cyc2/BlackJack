@@ -32,11 +32,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var fourthDealerCardImage: UIImageView!
     @IBOutlet weak var fifthDealerCardImage: UIImageView!
     @IBOutlet weak var sixthDealerCardImage: UIImageView!
-
+    
     
     
     let cardArray = [11, 11, 11, 11, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
-
+    
     var name = ""
     
     var dCard1 = 0
@@ -96,8 +96,9 @@ class ViewController: UIViewController {
         if name == "Cheat" {
             playerChips = 500
             TotalChipsLabel.text = "500"
-            
         }
+            hitButton.enabled = false
+            standButton.enabled = false
         
     }
     
@@ -179,6 +180,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onTappedDealButton(sender: AnyObject) {
+        clearImages()
+        
         drawCards()
         if playerChips < 1 {
             playerChips = 100
@@ -222,6 +225,7 @@ class ViewController: UIViewController {
             hitButton.enabled = false
             standButton.enabled = false
             checkForWin()
+            
         }
     }
     
@@ -281,7 +285,7 @@ class ViewController: UIViewController {
             
         case 2 :
             playerCurrentTotal = pCard1 + pCard2 + pCard3 + pCard4 + pCard5
-
+            
             self.fifthPlayerCardImage.image = UIImage(named: pCard5Image)
             
             PlayerLabel.text = ("\(pCard1) \(pCard2) \(pCard3) \(pCard4) \(pCard5)")
@@ -398,6 +402,8 @@ class ViewController: UIViewController {
         bettingChips()
         DealerLabel.text = ("\(dCard1) \(dCard2)")
         DealerTotalLabel.text = String(dealerCurrentTotal)
+        hitButton.enabled = false
+        standButton.enabled = false
         dealButton.enabled = true
         timesHit = 0
         
@@ -409,25 +415,25 @@ class ViewController: UIViewController {
             wasPush = true
         }
         if playerCurrentTotal > dealerCurrentTotal && playerCurrentTotal <= 21 {
-            PlayerTotalLabel.text = ("You win \(playerBet)")
+            PlayerTotalLabel.text = ("You win $\(playerBet)!")
             playerWin = true
         }
         if playerCurrentTotal < dealerCurrentTotal && dealerCurrentTotal <= 21 {
-            PlayerTotalLabel.text = ("You lose \(playerBet)")
+            PlayerTotalLabel.text = ("You lose $\(playerBet)!")
         }
         if playerCurrentTotal > dealerCurrentTotal && playerCurrentTotal > 21 && dealerCurrentTotal < 22 {
-            PlayerTotalLabel.text = ("You lose \(playerBet)")
+            PlayerTotalLabel.text = ("You lose $\(playerBet)!")
         }
         if playerCurrentTotal < dealerCurrentTotal && playerCurrentTotal < 22 && dealerCurrentTotal > 21 {
-            PlayerTotalLabel.text = ("You win \(playerBet)")
+            PlayerTotalLabel.text = ("You win $\(playerBet)!")
             playerWin = true
         }
         if playerInitial == 21 && dealerInitial != 21 {
-            PlayerTotalLabel.text = ("Blackjack pays 3/2 \(playerBet * 3/2)")
+            PlayerTotalLabel.text = ("Blackjack pays 3/2 \(playerBet * 3/2)!")
             playerWin = true
         }
         if playerInitial != 21 && dealerInitial == 21 {
-            PlayerTotalLabel.text = ("You lose \(playerBet)")
+            PlayerTotalLabel.text = ("You lose $\(playerBet)!")
         }
         if playerInitial == 21 && dealerInitial == 21 {
             PlayerTotalLabel.text = ("Push")
@@ -458,15 +464,9 @@ class ViewController: UIViewController {
         TotalChipsLabel.text = String(playerChips)
         increaseBetButton.enabled = true
         decreaseBetButton.enabled = true
-        hitButton.enabled = true
-        standButton.enabled = true
+        hitButton.enabled = false
+        standButton.enabled = false
         dealButton.enabled = true
-        self.firstPlayerCardImage.image = nil
-        self.secondPlayerCardImage.image = nil
-        self.thirdPlayerCardImage.image = nil
-        self.fourthPlayerCardImage.image = nil
-        self.fifthPlayerCardImage.image = nil
-        self.sixthPlayerCardImage.image = nil
     }
     
     func aceChecker() {
@@ -538,5 +538,22 @@ class ViewController: UIViewController {
             playerBusted()
         }
     }
+    
+    func clearImages() {
+        self.firstPlayerCardImage.image = nil
+        self.secondPlayerCardImage.image = nil
+        self.thirdPlayerCardImage.image = nil
+        self.fourthPlayerCardImage.image = nil
+        self.fifthPlayerCardImage.image = nil
+        self.sixthPlayerCardImage.image = nil
+        
+        self.firstDealerCardImage.image = nil
+        self.secondDealerCardImage.image = nil
+        self.thirdDealerCardImage.image = nil
+        self.fourthDealerCardImage.image = nil
+        self.fifthDealerCardImage.image = nil
+        self.sixthDealerCardImage.image = nil
+    }
+    
 }
 
