@@ -97,8 +97,8 @@ class ViewController: UIViewController {
             playerChips = 500
             TotalChipsLabel.text = "500"
         }
-            hitButton.enabled = false
-            standButton.enabled = false
+        hitButton.enabled = false
+        standButton.enabled = false
         
         if name == "" {
             playerChips = 10000
@@ -194,6 +194,7 @@ class ViewController: UIViewController {
         self.firstPlayerCardImage.image = UIImage(named: pCard1Image)
         self.secondPlayerCardImage.image = UIImage(named: pCard2Image)
         self.secondDealerCardImage.image = UIImage(named: dCard2Image)
+        self.firstDealerCardImage.image = UIImage(named: "card53")
         TotalChipsLabel.text = String(playerChips)
         PlayerTotalLabel.text = String(playerInitial)
         DealerTotalLabel.text = ("?")
@@ -223,12 +224,14 @@ class ViewController: UIViewController {
         if dCard1 == 11 && dCard2 == 10 {
             hitButton.enabled = false
             standButton.enabled = false
+            self.firstDealerCardImage.image = UIImage(named: dCard1Image)
             checkForWin()
         }
         
         if dCard1 == 10 && dCard2 == 11 {
             hitButton.enabled = false
             standButton.enabled = false
+            self.firstDealerCardImage.image = UIImage(named: dCard1Image)
             checkForWin()
             
         }
@@ -352,52 +355,47 @@ class ViewController: UIViewController {
     }
     
     func dealersTurn() {
+        dealerCurrentTotal = dealerInitial
+        dealerAceChecker()
+        
         hitButton.enabled = false
         standButton.enabled = false
         
-        dealerCurrentTotal = dealerInitial
+        self.firstDealerCardImage.image = UIImage(named: dCard1Image)
+        DealerLabel.text = ("\(dCard1) \(dCard2)")
         
         if dealerInitial < 17 {
-            DealerLabel.text = ("\(dCard1) \(dCard2) \(dCard3)")
-            dealerCurrentTotal = dealerSecond
+            dealerCurrentTotal = dCard1 + dCard2 + dCard3
             DealerTotalLabel.text = String(dealerCurrentTotal)
             self.firstDealerCardImage.image = UIImage(named: dCard1Image)
             self.thirdDealerCardImage.image = UIImage(named: dCard3Image)
-            if dealerCurrentTotal > 21 {
-                if dCard1 == 11 {
-                    dCard1 = 1
-                }
-                if dCard2 == 11 {
-                    dCard2 = 1
-                }
-                if dCard3 == 11 {
-                    dCard3 = 1
-                }
-                dealerCurrentTotal = dCard1 + dCard2 + dCard3
-            }
-            if dealerCurrentTotal < 17 {
-                DealerLabel.text = ("\(dCard1) \(dCard2) \(dCard3) \(dCard4)")
-                dealerCurrentTotal = dealerThird
-                DealerTotalLabel.text = String(dealerCurrentTotal)
-                self.fourthDealerCardImage.image = UIImage(named: dCard4Image)
-                if dealerCurrentTotal < 17 {
-                    DealerLabel.text = ("\(dCard1) \(dCard2) \(dCard3) \(dCard4) \(dCard5)")
-                    dealerCurrentTotal = dealerFourth
-                    self.fifthDealerCardImage.image = UIImage(named: dCard5Image)
-                    DealerTotalLabel.text = String(dealerCurrentTotal)
-                    if dealerCurrentTotal < 17 {
-                        DealerLabel.text = ("\(dCard1) \(dCard2) \(dCard3) \(dCard4) \(dCard5) \(dCard6)")
-                        dealerCurrentTotal = dealerFifth
-                        DealerTotalLabel.text = String(dealerCurrentTotal)
-                        self.sixthDealerCardImage.image = UIImage(named: dCard6Image)
-                    }
-                }
-            }
-            
-        } else {
-            ("\(dCard1) \(dCard2)")
-            self.firstDealerCardImage.image = UIImage(named: dCard1Image)
+            dealerAceChecker()
+            DealerLabel.text = ("\(dCard1) \(dCard2) \(dCard3)")
         }
+        
+        if dealerCurrentTotal < 17 {
+            dealerCurrentTotal = dCard1 + dCard2 + dCard3 + dCard4
+            DealerTotalLabel.text = String(dealerCurrentTotal)
+            self.fourthDealerCardImage.image = UIImage(named: dCard4Image)
+            dealerAceChecker()
+            DealerLabel.text = ("\(dCard1) \(dCard2) \(dCard3) \(dCard4)")
+        }
+        
+        if dealerCurrentTotal < 17 {
+            dealerCurrentTotal = dCard1 + dCard2 + dCard3 + dCard4 + dCard5
+            self.fifthDealerCardImage.image = UIImage(named: dCard5Image)
+            DealerTotalLabel.text = String(dealerCurrentTotal)
+            dealerAceChecker()
+            DealerLabel.text = ("\(dCard1) \(dCard2) \(dCard3) \(dCard4) \(dCard5)")
+        }
+        if dealerCurrentTotal < 17 {
+            dealerCurrentTotal = dCard1 + dCard2 + dCard3 + dCard4 + dCard5 + dCard6
+            DealerTotalLabel.text = String(dealerCurrentTotal)
+            self.sixthDealerCardImage.image = UIImage(named: dCard6Image)
+            dealerAceChecker()
+            DealerLabel.text = ("\(dCard1) \(dCard2) \(dCard3) \(dCard4) \(dCard5) \(dCard6)")
+        }
+        
         checkForWin()
         dealButton.enabled = true
         timesHit = 0
@@ -407,6 +405,7 @@ class ViewController: UIViewController {
         bettingChips()
         DealerLabel.text = ("\(dCard1) \(dCard2)")
         DealerTotalLabel.text = String(dealerCurrentTotal)
+        self.firstDealerCardImage.image = UIImage(named: dCard1Image)
         hitButton.enabled = false
         standButton.enabled = false
         dealButton.enabled = true
@@ -444,8 +443,8 @@ class ViewController: UIViewController {
             PlayerTotalLabel.text = ("Push")
             wasPush = true
         }
-        
         DealerTotalLabel.text = String(dealerCurrentTotal)
+        self.firstDealerCardImage.image = UIImage(named: dCard1Image)
         bettingChips()
     }
     
@@ -480,11 +479,9 @@ class ViewController: UIViewController {
                 playerCurrentTotal = playerCurrentTotal - 10
             }
         }
-        
         if pCard1 == 11 && pCard3 == 11 || pCard2 == 11 && pCard3 == 11 {
             playerCurrentTotal = playerCurrentTotal - 20
         }
-        
         if pCard1 + pCard2 + pCard3 > 21 && pCard1 + pCard2 != 21 && timesHit != 0 {
             if pCard1 == 11 || pCard2 == 11 || pCard3 == 11 {
                 if pCard1 == 11 {
@@ -498,7 +495,6 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
         if pCard1 + pCard2 + pCard3 < 21 && timesHit == 0 {
             if pCard1 == 11 || pCard2 == 11 || pCard3 == 11 {
                 if pCard1 == 11 {
@@ -512,7 +508,6 @@ class ViewController: UIViewController {
                 }
             }
         }
-        
         if playerCurrentTotal > 21 && (pCard1 == 11 || pCard2 == 11 || pCard3 == 11 || pCard4 == 11 || pCard5 == 11){
             if pCard1 == 11 {
                 pCard1 = 1
@@ -531,15 +526,14 @@ class ViewController: UIViewController {
             }
             PlayerTotalLabel.text = String(playerCurrentTotal)
             ace = true
-            
         }
     }
     func bustChecker() {
-        if ace == true {
-            
-        } else if playerCurrentTotal > 21 {
+        if playerCurrentTotal > 21 {
             PlayerTotalLabel.text = ("You bust \(playerCurrentTotal)")
             hitButton.enabled = false
+            DealerLabel.text = ("\(dCard1) \(dCard2)")
+            self.firstDealerCardImage.image = UIImage(named: dCard1Image)
             playerBusted()
         }
     }
@@ -558,6 +552,61 @@ class ViewController: UIViewController {
         self.fourthDealerCardImage.image = nil
         self.fifthDealerCardImage.image = nil
         self.sixthDealerCardImage.image = nil
+    }
+    
+    func dealerAceChecker() {
+        if dealerCurrentTotal > 21 {
+            if dCard1 == 11 && dCard2 == 11 {
+                dealerCurrentTotal = dealerCurrentTotal - 10
+            }
+        }
+        if dCard1 == 11 && dCard3 == 11 || dCard2 == 11 && dCard3 == 11 {
+            dealerCurrentTotal = dealerCurrentTotal - 20
+        }
+        if dCard1 + dCard2 + dCard3 > 21 && dCard1 + dCard2 != 21{
+            if dCard1 == 11 || dCard2 == 11 || dCard3 == 11 {
+                if dCard1 == 11 {
+                    dCard1 = 1
+                }
+                if dCard2 == 11 {
+                    dCard2 = 1
+                }
+                if dCard3 == 11 {
+                    dCard3 = 1
+                }
+            }
+        }
+        if dCard1 + dCard2 + dCard3 < 21{
+            if dCard1 == 11 || dCard2 == 11 || dCard3 == 11 {
+                if dCard1 == 11 {
+                    dCard1 = 11
+                }
+                if dCard2 == 11 {
+                    dCard2 = 11
+                }
+                if dCard3 == 11 {
+                    dCard3 = 11
+                }
+            }
+        }
+        if dealerCurrentTotal > 21 && (dCard1 == 11 || dCard2 == 11 || dCard3 == 11 || dCard4 == 11 || dCard5 == 11){
+            if dCard1 == 11 {
+                dCard1 = 1
+            }
+            if dCard2 == 11 {
+                dCard2 = 1
+            }
+            if dCard3 == 11 {
+                dCard3 = 1
+            }
+            if dCard4 == 11 {
+                dCard4 = 1
+            }
+            if dCard5 == 11 {
+                dCard5 = 1
+            }
+            DealerTotalLabel.text = String(dealerCurrentTotal)
+        }
     }
     
 }
