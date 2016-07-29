@@ -182,6 +182,9 @@ class ViewController: UIViewController {
         playerFourth = pCard1 + pCard2 + pCard3 + pCard4 + pCard5
         playerFifth = pCard1 + pCard2 + pCard3 + pCard4 + pCard5 + pCard6
         
+        PlayerTotalLabel.text = String(playerInitial)
+        PlayerLabel.text = ("\(pCard1) \(pCard2)")
+        
     }
     
     @IBAction func onTappedDealButton(sender: AnyObject) {
@@ -208,6 +211,10 @@ class ViewController: UIViewController {
         dealButton.enabled = false
         dealerCurrentTotal = dealerInitial
         playerCurrentTotal = pCard1 + pCard2
+        
+        if Int(PlayerTotalLabel.text!)! > 21 {
+            PlayerTotalLabel.text = String(playerCurrentTotal)
+        }
         
         if pCard1 == 11 && pCard2 == 10 {
             hitButton.enabled = false
@@ -372,7 +379,6 @@ class ViewController: UIViewController {
             dealerAceChecker()
             DealerLabel.text = ("\(dCard1) \(dCard2) \(dCard3)")
         }
-        
         if dealerCurrentTotal < 17 {
             dealerCurrentTotal = dCard1 + dCard2 + dCard3 + dCard4
             DealerTotalLabel.text = String(dealerCurrentTotal)
@@ -475,8 +481,11 @@ class ViewController: UIViewController {
     
     func aceChecker() {
         if Int(PlayerTotalLabel.text!) > 21 {
-            if pCard1 == 11 || pCard2 == 11 {
-                playerCurrentTotal = playerCurrentTotal - 10
+            if pCard1 == 11 && pCard2 == 11 {
+                pCard1 = 11
+                pCard2 = 1
+                playerCurrentTotal = 12
+                PlayerTotalLabel.text = String(playerCurrentTotal)
             }
         }
         if pCard1 == 11 && pCard3 == 11 || pCard2 == 11 && pCard3 == 11 {

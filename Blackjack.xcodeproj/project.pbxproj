@@ -35,17 +35,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2417C3871D428E8B0014C153 /* BuildYourOwnProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildYourOwnProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2417C3871D428E8B0014C153 /* Blackjack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blackjack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2417C38A1D428E8B0014C153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2417C38C1D428E8B0014C153 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2417C38F1D428E8B0014C153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2417C3911D428E8C0014C153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2417C3941D428E8C0014C153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2417C3961D428E8C0014C153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2417C39B1D428E8C0014C153 /* BuildYourOwnProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuildYourOwnProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2417C39B1D428E8C0014C153 /* Blackjack.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Blackjack.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2417C39F1D428E8C0014C153 /* BuildYourOwnProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildYourOwnProjectTests.swift; sourceTree = "<group>"; };
 		2417C3A11D428E8C0014C153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2417C3A61D428E8C0014C153 /* BuildYourOwnProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuildYourOwnProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2417C3A61D428E8C0014C153 /* Blackjack.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Blackjack.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2417C3AA1D428E8C0014C153 /* BuildYourOwnProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildYourOwnProjectUITests.swift; sourceTree = "<group>"; };
 		2417C3AC1D428E8C0014C153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24D233D41D467D3700D41908 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = ../SecondViewController.swift; sourceTree = "<group>"; };
@@ -89,9 +89,9 @@
 		2417C3881D428E8B0014C153 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2417C3871D428E8B0014C153 /* BuildYourOwnProject.app */,
-				2417C39B1D428E8C0014C153 /* BuildYourOwnProjectTests.xctest */,
-				2417C3A61D428E8C0014C153 /* BuildYourOwnProjectUITests.xctest */,
+				2417C3871D428E8B0014C153 /* Blackjack.app */,
+				2417C39B1D428E8C0014C153 /* Blackjack.xctest */,
+				2417C3A61D428E8C0014C153 /* Blackjack.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,9 +131,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2417C3861D428E8B0014C153 /* BuildYourOwnProject */ = {
+		2417C3861D428E8B0014C153 /* Blackjack */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2417C3AF1D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BuildYourOwnProject" */;
+			buildConfigurationList = 2417C3AF1D428E8C0014C153 /* Build configuration list for PBXNativeTarget "Blackjack" */;
 			buildPhases = (
 				2417C3831D428E8B0014C153 /* Sources */,
 				2417C3841D428E8B0014C153 /* Frameworks */,
@@ -143,14 +143,14 @@
 			);
 			dependencies = (
 			);
-			name = BuildYourOwnProject;
+			name = Blackjack;
 			productName = BuildYourOwnProject;
-			productReference = 2417C3871D428E8B0014C153 /* BuildYourOwnProject.app */;
+			productReference = 2417C3871D428E8B0014C153 /* Blackjack.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2417C39A1D428E8C0014C153 /* BuildYourOwnProjectTests */ = {
+		2417C39A1D428E8C0014C153 /* BlackjackTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2417C3B21D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BuildYourOwnProjectTests" */;
+			buildConfigurationList = 2417C3B21D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BlackjackTests" */;
 			buildPhases = (
 				2417C3971D428E8C0014C153 /* Sources */,
 				2417C3981D428E8C0014C153 /* Frameworks */,
@@ -161,14 +161,14 @@
 			dependencies = (
 				2417C39D1D428E8C0014C153 /* PBXTargetDependency */,
 			);
-			name = BuildYourOwnProjectTests;
+			name = BlackjackTests;
 			productName = BuildYourOwnProjectTests;
-			productReference = 2417C39B1D428E8C0014C153 /* BuildYourOwnProjectTests.xctest */;
+			productReference = 2417C39B1D428E8C0014C153 /* Blackjack.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2417C3A51D428E8C0014C153 /* BuildYourOwnProjectUITests */ = {
+		2417C3A51D428E8C0014C153 /* BlackjackUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2417C3B51D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BuildYourOwnProjectUITests" */;
+			buildConfigurationList = 2417C3B51D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BlackjackUITests" */;
 			buildPhases = (
 				2417C3A21D428E8C0014C153 /* Sources */,
 				2417C3A31D428E8C0014C153 /* Frameworks */,
@@ -179,9 +179,9 @@
 			dependencies = (
 				2417C3A81D428E8C0014C153 /* PBXTargetDependency */,
 			);
-			name = BuildYourOwnProjectUITests;
+			name = BlackjackUITests;
 			productName = BuildYourOwnProjectUITests;
-			productReference = 2417C3A61D428E8C0014C153 /* BuildYourOwnProjectUITests.xctest */;
+			productReference = 2417C3A61D428E8C0014C153 /* Blackjack.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					2417C3861D428E8B0014C153 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9F7D4UEE8J;
 					};
 					2417C39A1D428E8C0014C153 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -207,7 +208,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2417C3821D428E8B0014C153 /* Build configuration list for PBXProject "BuildYourOwnProject" */;
+			buildConfigurationList = 2417C3821D428E8B0014C153 /* Build configuration list for PBXProject "Blackjack" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -220,9 +221,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2417C3861D428E8B0014C153 /* BuildYourOwnProject */,
-				2417C39A1D428E8C0014C153 /* BuildYourOwnProjectTests */,
-				2417C3A51D428E8C0014C153 /* BuildYourOwnProjectUITests */,
+				2417C3861D428E8B0014C153 /* Blackjack */,
+				2417C39A1D428E8C0014C153 /* BlackjackTests */,
+				2417C3A51D428E8C0014C153 /* BlackjackUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -286,12 +287,12 @@
 /* Begin PBXTargetDependency section */
 		2417C39D1D428E8C0014C153 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2417C3861D428E8B0014C153 /* BuildYourOwnProject */;
+			target = 2417C3861D428E8B0014C153 /* Blackjack */;
 			targetProxy = 2417C39C1D428E8C0014C153 /* PBXContainerItemProxy */;
 		};
 		2417C3A81D428E8C0014C153 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2417C3861D428E8B0014C153 /* BuildYourOwnProject */;
+			target = 2417C3861D428E8B0014C153 /* Blackjack */;
 			targetProxy = 2417C3A71D428E8C0014C153 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -405,10 +406,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BuildYourOwnProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Chris.BuildYourOwnProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.Blackjack;
+				PRODUCT_NAME = Blackjack;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -416,10 +420,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BuildYourOwnProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Chris.BuildYourOwnProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.Blackjack;
+				PRODUCT_NAME = Blackjack;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -430,8 +437,8 @@
 				INFOPLIST_FILE = BuildYourOwnProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chris.BuildYourOwnProjectTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuildYourOwnProject.app/BuildYourOwnProject";
+				PRODUCT_NAME = Blackjack;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blackjack.app/Blackjack";
 			};
 			name = Debug;
 		};
@@ -442,8 +449,8 @@
 				INFOPLIST_FILE = BuildYourOwnProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chris.BuildYourOwnProjectTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuildYourOwnProject.app/BuildYourOwnProject";
+				PRODUCT_NAME = Blackjack;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blackjack.app/Blackjack";
 			};
 			name = Release;
 		};
@@ -453,7 +460,7 @@
 				INFOPLIST_FILE = BuildYourOwnProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chris.BuildYourOwnProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Blackjack;
 				TEST_TARGET_NAME = BuildYourOwnProject;
 			};
 			name = Debug;
@@ -464,7 +471,7 @@
 				INFOPLIST_FILE = BuildYourOwnProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Chris.BuildYourOwnProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Blackjack;
 				TEST_TARGET_NAME = BuildYourOwnProject;
 			};
 			name = Release;
@@ -472,7 +479,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2417C3821D428E8B0014C153 /* Build configuration list for PBXProject "BuildYourOwnProject" */ = {
+		2417C3821D428E8B0014C153 /* Build configuration list for PBXProject "Blackjack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2417C3AD1D428E8C0014C153 /* Debug */,
@@ -481,7 +488,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2417C3AF1D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BuildYourOwnProject" */ = {
+		2417C3AF1D428E8C0014C153 /* Build configuration list for PBXNativeTarget "Blackjack" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2417C3B01D428E8C0014C153 /* Debug */,
@@ -490,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2417C3B21D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BuildYourOwnProjectTests" */ = {
+		2417C3B21D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BlackjackTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2417C3B31D428E8C0014C153 /* Debug */,
@@ -499,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2417C3B51D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BuildYourOwnProjectUITests" */ = {
+		2417C3B51D428E8C0014C153 /* Build configuration list for PBXNativeTarget "BlackjackUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2417C3B61D428E8C0014C153 /* Debug */,

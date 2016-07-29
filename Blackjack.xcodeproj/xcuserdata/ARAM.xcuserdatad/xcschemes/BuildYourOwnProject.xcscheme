@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2417C3861D428E8B0014C153"
-               BuildableName = "BuildYourOwnProject.app"
-               BlueprintName = "BuildYourOwnProject"
-               ReferencedContainer = "container:BuildYourOwnProject.xcodeproj">
+               BuildableName = "Blackjack.app"
+               BlueprintName = "Blackjack"
+               ReferencedContainer = "container:Blackjack.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2417C39A1D428E8C0014C153"
-               BuildableName = "BuildYourOwnProjectTests.xctest"
-               BlueprintName = "BuildYourOwnProjectTests"
-               ReferencedContainer = "container:BuildYourOwnProject.xcodeproj">
+               BuildableName = "Blackjack.xctest"
+               BlueprintName = "BlackjackTests"
+               ReferencedContainer = "container:Blackjack.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2417C3A51D428E8C0014C153"
-               BuildableName = "BuildYourOwnProjectUITests.xctest"
-               BlueprintName = "BuildYourOwnProjectUITests"
-               ReferencedContainer = "container:BuildYourOwnProject.xcodeproj">
+               BuildableName = "Blackjack.xctest"
+               BlueprintName = "BlackjackUITests"
+               ReferencedContainer = "container:Blackjack.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2417C3861D428E8B0014C153"
-            BuildableName = "BuildYourOwnProject.app"
-            BlueprintName = "BuildYourOwnProject"
-            ReferencedContainer = "container:BuildYourOwnProject.xcodeproj">
+            BuildableName = "Blackjack.app"
+            BlueprintName = "Blackjack"
+            ReferencedContainer = "container:Blackjack.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2417C3861D428E8B0014C153"
-            BuildableName = "BuildYourOwnProject.app"
-            BlueprintName = "BuildYourOwnProject"
-            ReferencedContainer = "container:BuildYourOwnProject.xcodeproj">
+            BuildableName = "Blackjack.app"
+            BlueprintName = "Blackjack"
+            ReferencedContainer = "container:Blackjack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2417C3861D428E8B0014C153"
-            BuildableName = "BuildYourOwnProject.app"
-            BlueprintName = "BuildYourOwnProject"
-            ReferencedContainer = "container:BuildYourOwnProject.xcodeproj">
+            BuildableName = "Blackjack.app"
+            BlueprintName = "Blackjack"
+            ReferencedContainer = "container:Blackjack.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
